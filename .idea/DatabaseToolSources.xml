@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolSources">
+    <data-source name="Z_con" uuid="a99b6d5f-4de2-4c0d-b249-7af7e5b65625" type="MYSQL">
+      <base-info connect-type="DB_DEFAULT" />
+      <user-name>u168183796_qaloantecuser</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="u168183796_qaloantec" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <url>jdbc:mysql://45.87.83.5:3306/u168183796_qaloantec?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul?useSSL=false&amp;serverTimezone=Europe/Istanbul</url>
+      <remarks>comment</remarks>
+      <vm-options />
+      <driver-info id="mysql8" />
+      <ssh-properties enabled="false" />
+      <jdbc-additional-properties>
+        <property name="characterSetResults" value="utf8" />
+        <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="useTimezone" value="true" />
+        <property name="yearIsDateType" value="false" />
+      </jdbc-additional-properties>
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>
