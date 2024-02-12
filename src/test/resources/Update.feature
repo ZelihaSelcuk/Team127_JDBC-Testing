@@ -38,10 +38,24 @@ Scenario: "update_logs" tablosunda "version=?" ve "id=?" olan datanın "update_l
   * Update log degerinin degistigi dogrulanir.
   * Database baglantisi kapatilir.
 
+@qyery10
+Scenario: Update_logs tablosunda "id=?" degerine gore bir datayı siliniz ve silindigini dogrulayiniz.
+
+  * update_logs tablosuna insert query hazirlanir ve calistirilir.
+  * update_logs tablosuna insert edilen data silinir.
+  * Satirin silindigi dogrulanir.
+  * Database baglantisi kapatilir.
 
 
+@query11
+Scenario: "support_attacments"  tablosunda "support_message_id=?" değerine gore
+            bir dosyayi siliniz ve silindiğini doğrulayiniz.
 
+  # önce insert sonra delete yapariz.
+  # insert isleminde daha dinamik olmasi icin faker class ina deger urettiririz.
+  # insert ettigimiz faker degerlerine sahip datayi yine faker degerlerini alarak delete ederiz.
 
-
-
-
+  * support_attacments tablosuna insert query hazirlanir ve calistirilir.
+  * support_attacments tablosuna insert edilen data silinir.
+  * satirin silindigi dogrulanir.
+  * Database baglantisi kapatilir.

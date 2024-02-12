@@ -30,6 +30,9 @@ public class StepDefinition {
     String description;
     String version;
     String updateLog;
+    int supportMessageId;
+
+
 
     @Given("Database baglantisi kurulur.")
     public void database_baglantisi_kurulur() {
@@ -255,7 +258,9 @@ public class StepDefinition {
        if (rowCount>0){
            flag++;
        }
-               assertEquals(1,flag);
+        rowCount=0;
+
+        assertEquals(1,flag);
 
     }
     @Given("update_logs tablosuna insert edilen datanın update log degeri degistirilir.")
@@ -273,6 +278,8 @@ public class StepDefinition {
         rowCount=preparedStatement.executeUpdate();
 
         System.out.println("girilen id : "+ id);
+        System.out.println("girilen version : "+ version);
+        System.out.println("girilen updated_log : "+ updateLogYeni);
 
     }
     @Given("Update log degerinin degistigi dogrulanir.")
@@ -283,44 +290,30 @@ public class StepDefinition {
     }
 
 
+//  Update_logs tablosunda "id=?" degerine gore bir datayı siliniz ve silindigini dogrulayiniz.
+
+    @Given("update_logs tablosuna insert edilen data silinir.")
+    public void update_logs_tablosuna_insert_edilen_data_silinir() throws SQLException {
+
+    query=queryManage.getPreparedQuery10();
+    preparedStatement=JDBCReusableMethods.getConnection().prepareStatement(query);
+
+    preparedStatement.setInt(1,id);
+    rowCount=preparedStatement.executeUpdate();
+
+        System.out.println("silinen id : "+ id);
 
 
+    }
+    @Given("Satirin silindigi dogrulanir.")
+    public void satirin_silindigi_dogrulanir() {
+
+        assertEquals(1,rowCount);
 
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ----------------- çalışmalarım ------------------------------------
+/*----------------- çalışmalarım ------------------------------------
     @Given("Prepared query08 oluşturulur ve execute edilir.")
     public void prepared_query08_oluşturulur_ve_execute_edilir() throws SQLException {
         query = queryManage.getQuery88();
@@ -343,6 +336,7 @@ public class StepDefinition {
     }
 
 
-
+*/
 
 }
+

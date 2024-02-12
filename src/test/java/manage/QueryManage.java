@@ -14,10 +14,9 @@ public class QueryManage {
     private String preparedQuery08 ="update admin_notifications set is_read=? where  id=?";
    private String preparedQuery09 = "insert into update_logs (id, version, update_log, created_at) VALUES (?,?,?,?)";
    private  String preparedQuer09Update = "update update_logs set update_log=? where version=? and id=?";
-
-
-
-
+   private  String preparedQuery10 = "delete from update_logs where id = ?";
+   private String preparedQuery11Update = "insert into support_attachments (id, support_message_id, attachment, created_at) values (?,?,?,?)";
+    private String preparedQuery11Delete = "delete from support_attachments where support_message_id=?";
 
 //------------ GETTER------------------
 
@@ -49,4 +48,10 @@ public class QueryManage {
     public String getPreparedQuery09() {return preparedQuery09;}
 
     public String getPreparedQuer09Update() {return preparedQuer09Update;}
+
+    public String getPreparedQuery10() {return preparedQuery10;}
+
+    public String getPreparedQuery11Update() {return preparedQuery11Update;}
+
+    public String getPreparedQuery11Delete() {return preparedQuery11Delete;}
 }
